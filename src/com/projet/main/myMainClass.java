@@ -1,10 +1,16 @@
 package com.projet.main;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class myMainClass {
+	
+	private static final Logger LOG = LogManager.getLogger();
 
 	public static void main(String[] args) {
-		System.console().writer().println("Hello World");
+		
+		
+		LOG.debug("Hello {}", "World");
 		
 		
 	}
